@@ -18,7 +18,13 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function isTyler(name){
+  if (name === 'Tyler'){
+    return true;
+  } else {
+    return false;
+  };
+};
 
 
 ////////// PROBLEM 2 //////////
@@ -28,7 +34,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function getName(){
+  let name = prompt("What is your name?")
+  return name;
+};
 
 
 ////////// PROBLEM 3 //////////
@@ -41,7 +50,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function welcome(){
+  alert("Welcome, " + getName());
+};
 
 
 ////////// PROBLEM 4 //////////
@@ -51,7 +62,8 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+// parameters are what the function takes in
+// arguments are what are passed to a functions parameters when it is invoked
 
 
 ////////// PROBLEM 5 //////////
@@ -61,7 +73,8 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+// false, 0, '' or "", null, undefined, NaN
+// To check if something is falsy, you will need to use an equality operator to check the boolean value
 
 
 ////////// PROBLEM 6 //////////
@@ -71,7 +84,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+function myName(){
+  return 'Tyler';
+};
 
 
 /*
@@ -79,7 +94,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+let newMyName = function(){
+  return myName();
+};
 
 
 /*
@@ -87,7 +104,7 @@ var name = 'Tyler';
 */
 
 // Code Here
-
+alert(newMyName());
 
 
 ////////// PROBLEM 7 //////////
@@ -97,7 +114,12 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function outerFn(){
+  return function(){
+    return "Tyler";
+  };
+  
+};
 
 
 /*
@@ -105,11 +127,11 @@ var name = 'Tyler';
 */
 
 //Code Here
-
-
+let innerFn = outerFn();
 
 /* 
   Now invoke innerFn.
 */
 
 // Code Here
+innerFn;
